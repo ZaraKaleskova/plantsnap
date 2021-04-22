@@ -30,3 +30,23 @@
     margin-right: 10px;
     color: #379683;
 }
+
+.postCommentsBox {
+    display: flex;
+    margin-top: 10px;
+}
+
+.postInput {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-top: 1px solid darkgrey;
+}
+
+.postButton{
+    flex: 0.25;
+    border: none;
+    border-top: 1px solid darkgrey;
+    background-color:  #379683;;
+    color: white;
+}
