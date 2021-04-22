@@ -3,6 +3,9 @@
     background-color: rgb(249, 253, 250);
     border: 2px solid #379683;
     margin-bottom: 50px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .postImage{
