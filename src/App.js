@@ -156,10 +156,15 @@ function App() {
 
       <div className="appHeader">
         <img className="appHeaderImage" alt="header image" src={logo} />
+        {user?.displayName ? (
+          <ImageUpload username={user.displayName} />
+        ) : (
+          <h3>Sign in to create a post.</h3>
+        )}
         {user ? (
           <Button onClick={() => auth.signOut()}>Logout</Button>
-        ) : (
-          <div className="appLoginContainer">
+          ) : (
+            <div className="appLoginContainer">
             <Button onClick={() => setOpen(true)}>Sign Up</Button>
             <Button onClick={() => setOpenSignIn(true)}>Sign In</Button>
           </div>
@@ -181,11 +186,6 @@ function App() {
         
       </div>     
 
-      {user?.displayName ? (
-        <ImageUpload username={user.displayName} />
-      ) : (
-        <h3>Sign in to create a post.</h3>
-      )}
     </div>
   );
 }

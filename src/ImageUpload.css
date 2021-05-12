@@ -1,12 +1,12 @@
 .imageUpload{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color: mediumaquamarine;
+    background-color:#7eca9c;
     border-top: 1px solid darkgrey;
     color: white;
 
